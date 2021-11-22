@@ -54,3 +54,11 @@
   position: absolute;
   width: 260px;
 }
+
+.eye{
+  position: absolute;
+}
+
+#hide1 {
+  display: none;
+}
