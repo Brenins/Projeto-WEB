@@ -144,7 +144,11 @@ The above copyright notice and this permission notice shall be included in all c
                               <i class="material-icons">lock_outline</i>
                             </span>
                           </div>
-                          <input type="password" placeholder="Senha." class="form-control">
+                          <input type="password" placeholder="Senha." class="form-control" id="myImput">
+                          <span class="eye" onclick="myFunction()">
+                            <i id="hide1" class="fa fa-eye"></i>
+                            <i id="hide2" class="fa fa-eye-slash"></i>
+                        </span>
                         </div>
                       </div>
                       <div class="form-check">
@@ -181,6 +185,25 @@ The above copyright notice and this permission notice shall be included in all c
       </footer>
     </div>
   </div>
+  <!--   Mostra senha   -->
+  <script>
+    function myFunction(){
+      var x = document.getElementById("myImput");
+      var y = document.getElementById("hide1");
+      var z = document.getElementById("hide2");
+
+      if (x.Type === 'password'){
+        x.type = "text";
+        y.style.display = "block";
+        z.style.display = "none";
+      }
+      else{
+        x.type = "password";
+        y.style.display = "none";
+        z.style.display = "block";
+      }
+    }
+  </script>
   <!--   Core JS Files   -->
   <script src="../../assets/js/core/jquery.min.js"></script>
   <script src="../../assets/js/core/popper.min.js"></script>
