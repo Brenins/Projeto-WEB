@@ -29,6 +29,9 @@ The above copyright notice and this permission notice shall be included in all c
   <link href="../../assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../../assets/demo/demo.css" rel="stylesheet" />
+
+  <!-- JS Files -->
+
 </head>
 
 <body class="off-canvas-sidebar">
@@ -93,7 +96,7 @@ The above copyright notice and this permission notice shall be included in all c
                           <i class="material-icons">email</i>
                         </span>
                       </div>
-                      <input type="email" class="form-control" placeholder="Insira seu E-Mail.">
+                      <input id="email" required type="email" class="form-control" placeholder="Insira seu E-Mail.">
                     </div>
                   </span>
                   <span class="bmd-form-group">
@@ -103,12 +106,12 @@ The above copyright notice and this permission notice shall be included in all c
                           <i class="material-icons">lock_outline</i>
                         </span>
                       </div>
-                      <input type="password" class="form-control" placeholder="Digite sua senha.">
+                      <input id="pass" required type="password" class="form-control" placeholder="Digite sua senha.">
                     </div>
                   </span>
                 </div>
                 <div class="card-footer justify-content-center">
-                  <a href="../private/home.html" class="btn btn-success btn-link btn-lg">Entrar</a>
+                  <button onclick="login()" type="submit" class="btn btn-success btn-link btn-lg">Entrar</button>
                 </div>
               </div>
             </form>
@@ -133,6 +136,10 @@ The above copyright notice and this permission notice shall be included in all c
   <script src="../../assets/js/core/popper.min.js"></script>
   <script src="../../assets/js/core/bootstrap-material-design.min.js"></script>
   <script src="../../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--   Add JS Files   -->
+  <script src="../../assets/js/utils/notification.js"></script>
+  <script src="../../assets/js/utils/jsonWorking.js"></script>
+  <script src="users.js"></script>
   <!--  Google Maps Plugin    -->
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <!-- Chartist JS -->

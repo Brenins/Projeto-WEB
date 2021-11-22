@@ -1,0 +1,20 @@
+{
+    "users": [
+        {
+            "user": {
+                "id": "1",
+                "name": "Lucas Lucio",
+                "email": "lucas@gmail.com",
+                "pass": "123456"
+            }
+        },
+        {
+            "user": {
+                "id": "2",
+                "name": "Natalia Lucio",
+                "email": "natalia@gmail.com",
+                "pass": "123456"
+            }
+        }
+    ]
+}
